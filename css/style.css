@@ -1,117 +1,199 @@
-body{    
-  font-family: "Poppins", sans-serif;
+body {
+    font-family: "Poppins", sans-serif;
 }
-.color{
+
+.color {
     color: rgba(26, 25, 25, 0.89);
 }
-header{
+
+header {
     margin: 100px 240px;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-li{
+
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
-margin-left: 30px;
-font-weight: bold;
-color: rgba(26, 25, 25, 0.89);
+    margin-left: 30px;
+    font-weight: bold;
+    color: rgba(26, 25, 25, 0.89);
 }
-ul{
+
+ul {
     display: flex;
 }
 
-.banner-heading{
+.banner-heading {
     font-size: 3.2rem;
 }
-.preebook-btn{
+
+.preebook-btn {
     display: flex;
     text-align: center;
     border: none;
     border-radius: 40px;
-    padding:12px 23px ;
+    padding: 12px 23px;
     background-color: rgb(199, 21, 133);
     color: white;
     font-weight: 800;
     margin-top: 30px;
 }
-.banner-section{
+
+.banner-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 80px 0px;
 }
-.banner-text{
+
+.banner-text {
     width: 50%;
 }
-.banner-pic{
+
+.banner-pic {
     background-image: url("../images/Circle\ design.svg");
 }
-.sponcer-sec{
-     margin: 80px 240px; 
+
+.sponcer-sec {
+    margin: 80px 240px;
 }
-.sponcer{
+
+.sponcer {
     display: flex;
     justify-content: space-between;
     margin: 40px 0px;
 }
-.product-sec{
+
+.product-sec {
     margin: 50px 240px;
 
 }
-.product-heading{
+
+.product-heading {
     text-align: center;
 }
-.product{
+
+.product {
     display: flex;
     justify-content: space-between;
 }
-.cards{
+
+.cards {
     width: 22%;
     padding: 12px;
     box-shadow: 0 0 0 2px white,
-    0.3em 0.3em 1em rgba(129, 127, 127, 0.6);
+        0.3em 0.3em 1em rgba(129, 127, 127, 0.6);
     margin-bottom: 30px;
 }
-.see-more{
-    margin-left:auto;
+
+.see-more {
+    margin-left: auto;
     display: flex;
     align-items: center;
     border: none;
     font-weight: 900;
     background-color: white;
-    color:rgb(199, 21, 133) ;
+    color: rgb(199, 21, 133);
 }
-.join{
+
+.join {
     display: flex;
     text-align: center;
     border: none;
     border-radius: 2px;
-    padding:12px 23px ;
+    padding: 12px 23px;
     background-color: rgb(199, 21, 133);
     color: white;
     font-weight: 800;
     margin-top: 30px;
 }
-.featured{
+
+.featured {
     margin: 50px 240px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
-.featured-text{
+
+.featured-text {
     width: 60%;
 }
-footer{
+
+footer {
     background-color: rgb(13, 13, 36);
     color: white;
     padding: 80px 0px;
     text-align: center;
 }
-i{
+
+i {
     margin-right: 20px;
+}
+
+@media screen and (max-width:430px) {
+    header {
+        margin: 0px 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+ul{
+    padding: 0px;
+    justify-content: space-between;
+}
+    a{
+        margin-left: 0px;
+        margin-right: 13px;
+    }
+    .banner-section {
+        flex-direction: column-reverse;
+    }
+    .banner-pic{
+        width: 95%;
+    }
+    .banner-text{
+        width: 80%;
+        text-align: center;
+    }
+    .preebook-btn{
+        margin: 30px auto;
+    }
+    .sponcer-sec{
+        margin: 0px;
+    }
+    .sponcer>img{
+        width: 10%;
+    }
+    .product-sec{
+        margin: 0px 40px;
+    }
+    .product{
+        flex-direction: column;
+    }
+    .cards{
+        width: 90%;
+    }
+    .see-more{
+        margin:0px auto ;
+    }
+    .featured{
+        margin: 0px;
+        flex-direction: column-reverse;
+    }
+    .featured-text{
+        width: 80%;
+        text-align: center;
+    }
+    .join{
+        margin: 0px auto 20px auto;
+    }
 }
